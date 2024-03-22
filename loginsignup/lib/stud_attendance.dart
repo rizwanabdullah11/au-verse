@@ -44,9 +44,9 @@ class AttendanceActivity extends StatelessWidget {
                   child: TextField(
                     style: TextStyle(color: Colors.white), // Added text color
                     decoration: InputDecoration(
-                      hintText: '',
+                      hintText: '111111',
                       hintStyle: TextStyle(color: Colors.white70), // Added hint text color
-                      border: InputBorder.none, // Removed the underline border
+                      border: InputBorder.none,
                     ),
                   ),
                 ),
@@ -66,7 +66,7 @@ class AttendanceActivity extends StatelessWidget {
                   child: TextField(
                     style: TextStyle(color: Colors.white), // Added text color
                     decoration: InputDecoration(
-                      hintText: '',
+                      hintText: 'Ahmad',
                       hintStyle: TextStyle(color: Colors.white70), // Added hint text color
                       border: InputBorder.none, // Removed the underline border
                     ),
@@ -89,7 +89,7 @@ class AttendanceActivity extends StatelessWidget {
                   child: TextField(
                     style: TextStyle(color: Colors.white), // Added text color
                     decoration: InputDecoration(
-                      hintText: '',
+                      hintText: 'Computer Science',
                       hintStyle: TextStyle(color: Colors.white70), // Added hint text color
                       border: InputBorder.none, // Removed the underline border
                     ),

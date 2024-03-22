@@ -1,8 +1,32 @@
 import 'package:flutter/material.dart';
 import 'package:video_player/video_player.dart';
+import 'package:loginsignup/au_home.dart';
+import 'faculty_login.dart';
+import 'student_login.dart';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
+
+  void onPressedButton1(BuildContext context) {
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => const StudentLogin()),
+    );
+  }
+
+  void onPressedButton2(BuildContext context) {
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => const FacultyLogin()),
+    );
+  }
+
+  void onPressedButton3(BuildContext context) {
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => const ThirdActivity()),
+    );
+  }
 
   @override
   _HomeState createState() => _HomeState();
@@ -15,9 +39,8 @@ class _HomeState extends State<Home> {
   void initState() {
     super.initState();
     _controller = VideoPlayerController.asset(
-      'assets/hafsa.mp4',
+      'assets/auvideo.mp4',
     )..initialize().then((_) {
-      // Ensure the first frame is shown after the video is initialized
       setState(() {});
     });
     _controller.setLooping(true);
