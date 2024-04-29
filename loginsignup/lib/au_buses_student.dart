@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class CourseActivity extends StatelessWidget {
-  const CourseActivity({Key? key}) : super(key: key);
+class Student_buses extends StatelessWidget {
+  Student_buses({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +19,7 @@ class CourseActivity extends StatelessWidget {
               height: 70,
               child: const Center(
                 child: Text(
-                  'Registered Courses',
+                  'Faculty Marks Upload',
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 30.0,
@@ -33,7 +33,7 @@ class CourseActivity extends StatelessWidget {
             const Row(
               children: [
                 Text(
-                  'Registration ID:',
+                  'Faculty ID:',
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                     color: Colors.white,
@@ -44,7 +44,7 @@ class CourseActivity extends StatelessWidget {
                   child: TextField(
                     style: TextStyle(color: Colors.white), // Added text color
                     decoration: InputDecoration(
-                      hintText: '200890',
+                      hintText: '00000',
                       hintStyle: TextStyle(color: Colors.white70), // Added hint text color
                       border: InputBorder.none, // Removed the underline border
                     ),
@@ -66,7 +66,7 @@ class CourseActivity extends StatelessWidget {
                   child: TextField(
                     style: TextStyle(color: Colors.white), // Added text color
                     decoration: InputDecoration(
-                      hintText: 'Rizwan Abdullah',
+                      hintText: 'Romana Maroof',
                       hintStyle: TextStyle(color: Colors.white70), // Added hint text color
                       border: InputBorder.none, // Removed the underline border
                     ),
@@ -78,7 +78,7 @@ class CourseActivity extends StatelessWidget {
             const Row(
               children: [
                 Text(
-                  'Class:',
+                  'Department: ',
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                     color: Colors.white,
@@ -89,7 +89,7 @@ class CourseActivity extends StatelessWidget {
                   child: TextField(
                     style: TextStyle(color: Colors.white), // Added text color
                     decoration: InputDecoration(
-                      hintText: 'BSCS-A-34',
+                      hintText: 'Computer Science',
                       hintStyle: TextStyle(color: Colors.white70), // Added hint text color
                       border: InputBorder.none, // Removed the underline border
                     ),
@@ -102,11 +102,11 @@ class CourseActivity extends StatelessWidget {
             // Table
             Table(
               border: TableBorder.all(color: Color(0xff102448)), // Change border color
-              columnWidths: const {
-                0: FlexColumnWidth(0.5),
-                1: FlexColumnWidth(3), // Increased size for Subject Name
+              columnWidths: {
+                0: FlexColumnWidth(1),
+                1: FlexColumnWidth(2), // Increased size for Subject Name
                 2: FlexColumnWidth(1), // Decreased size for Pre-requisite
-                3: FlexColumnWidth(2), // Decreased size for Credit HRS
+                3: FlexColumnWidth(1), // Decreased size for Credit HRS
               },
               children: [
                 // First Row with Values
@@ -116,7 +116,7 @@ class CourseActivity extends StatelessWidget {
                       child: Container(
                         padding: const EdgeInsets.all(8.0),
                         child: const Text(
-                          'Sr No.',
+                          'Reg Id',
                           style: TextStyle(
                             color: Colors.white,
                             fontWeight: FontWeight.bold,
@@ -128,7 +128,7 @@ class CourseActivity extends StatelessWidget {
                       child: Container(
                         padding: const EdgeInsets.all(8.0),
                         child: const Text(
-                          'SUBJECT NAME',
+                          'Student Name',
                           style: TextStyle(
                             color: Colors.white,
                             fontWeight: FontWeight.bold,
@@ -141,7 +141,7 @@ class CourseActivity extends StatelessWidget {
                       child: Container(
                         padding: const EdgeInsets.all(8.0),
                         child: const Text(
-                          'Credit.HRS',
+                          'Assignment 1',
                           style: TextStyle(
                             color: Colors.white,
                             fontWeight: FontWeight.bold,
@@ -153,7 +153,67 @@ class CourseActivity extends StatelessWidget {
                       child: Container(
                         padding: const EdgeInsets.all(8.0),
                         child: const Text(
-                          'Pre-requisite',
+                          'Assignment 2 ',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                    ),
+                    TableCell(
+                      child: Container(
+                        padding: const EdgeInsets.all(8.0),
+                        child: const Text(
+                          'Quiz 1',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                    ),
+                    TableCell(
+                      child: Container(
+                        padding: const EdgeInsets.all(8.0),
+                        child: const Text(
+                          'Quiz 2',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                    ),
+                    TableCell(
+                      child: Container(
+                        padding: const EdgeInsets.all(8.0),
+                        child: const Text(
+                          'Project',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                    ),
+                    TableCell(
+                      child: Container(
+                        padding: const EdgeInsets.all(8.0),
+                        child: const Text(
+                          'Mid Term',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                    ),
+                    TableCell(
+                      child: Container(
+                        padding: const EdgeInsets.all(8.0),
+                        child: const Text(
+                          'Final Term',
                           style: TextStyle(
                             color: Colors.white,
                             fontWeight: FontWeight.bold,
@@ -163,7 +223,6 @@ class CourseActivity extends StatelessWidget {
                     ),
                   ],
                 ),
-
                 TableRow(
                   children: [
                     TableCell(
@@ -182,7 +241,7 @@ class CourseActivity extends StatelessWidget {
                       child: Container(
                         padding: const EdgeInsets.all(8.0),
                         child: const Text(
-                          'Compiler Construction',
+                          'Rizwan',
                           style: TextStyle(
                             color: Colors.white,
                             fontWeight: FontWeight.bold,
@@ -195,7 +254,46 @@ class CourseActivity extends StatelessWidget {
                       child: Container(
                         padding: const EdgeInsets.all(8.0),
                         child: const Text(
-                          '2',
+                          '8',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 16.0, // Increase font size for Subject Name
+                          ),
+                        ),
+                      ),
+                    ),
+                    TableCell(
+                      child: Container(
+                        padding: const EdgeInsets.all(8.0),
+                        child: const Text(
+                          '9',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 16.0, // Increase font size for Subject Name
+                          ),
+                        ),
+                      ),
+                    ),
+                    TableCell(
+                      child: Container(
+                        padding: const EdgeInsets.all(8.0),
+                        child: const Text(
+                          '7',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 16.0, // Increase font size for Subject Name
+                          ),
+                        ),
+                      ),
+                    ),
+                    TableCell(
+                      child: Container(
+                        padding: const EdgeInsets.all(8.0),
+                        child: const Text(
+                          '8',
                           style: TextStyle(
                             color: Colors.white,
                             fontWeight: FontWeight.bold,
@@ -207,7 +305,31 @@ class CourseActivity extends StatelessWidget {
                       child: Container(
                         padding: const EdgeInsets.all(8.0),
                         child: const Text(
-                          '',
+                          '9',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                    ),
+                    TableCell(
+                      child: Container(
+                        padding: const EdgeInsets.all(8.0),
+                        child: const Text(
+                          '19',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                    ),
+                    TableCell(
+                      child: Container(
+                        padding: const EdgeInsets.all(8.0),
+                        child: const Text(
+                          '39',
                           style: TextStyle(
                             color: Colors.white,
                             fontWeight: FontWeight.bold,
@@ -219,31 +341,6 @@ class CourseActivity extends StatelessWidget {
                 ),
                 TableRow(
                   children: [
-                    TableCell(
-                      child: Container(
-                        padding: const EdgeInsets.all(8.0),
-                        child: const Text(
-                          '2',
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                      ),
-                    ),
-                    TableCell(
-                      child: Container(
-                        padding: const EdgeInsets.all(8.0),
-                        child: const Text(
-                          'Compiler Construction Lab',
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontWeight: FontWeight.bold,
-                            fontSize: 16.0, // Increase font size for Subject Name
-                          ),
-                        ),
-                      ),
-                    ),
                     TableCell(
                       child: Container(
                         padding: const EdgeInsets.all(8.0),
@@ -260,35 +357,7 @@ class CourseActivity extends StatelessWidget {
                       child: Container(
                         padding: const EdgeInsets.all(8.0),
                         child: const Text(
-                          '',
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-                TableRow(
-                  children: [
-                    TableCell(
-                      child: Container(
-                        padding: const EdgeInsets.all(8.0),
-                        child: const Text(
-                          '3',
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                      ),
-                    ),
-                    TableCell(
-                      child: Container(
-                        padding: const EdgeInsets.all(8.0),
-                        child: const Text(
-                          'Data Science',
+                          'Rizwan',
                           style: TextStyle(
                             color: Colors.white,
                             fontWeight: FontWeight.bold,
@@ -301,7 +370,46 @@ class CourseActivity extends StatelessWidget {
                       child: Container(
                         padding: const EdgeInsets.all(8.0),
                         child: const Text(
-                          '3',
+                          '8',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 16.0, // Increase font size for Subject Name
+                          ),
+                        ),
+                      ),
+                    ),
+                    TableCell(
+                      child: Container(
+                        padding: const EdgeInsets.all(8.0),
+                        child: const Text(
+                          '9',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 16.0, // Increase font size for Subject Name
+                          ),
+                        ),
+                      ),
+                    ),
+                    TableCell(
+                      child: Container(
+                        padding: const EdgeInsets.all(8.0),
+                        child: const Text(
+                          '7',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 16.0, // Increase font size for Subject Name
+                          ),
+                        ),
+                      ),
+                    ),
+                    TableCell(
+                      child: Container(
+                        padding: const EdgeInsets.all(8.0),
+                        child: const Text(
+                          '8',
                           style: TextStyle(
                             color: Colors.white,
                             fontWeight: FontWeight.bold,
@@ -313,7 +421,31 @@ class CourseActivity extends StatelessWidget {
                       child: Container(
                         padding: const EdgeInsets.all(8.0),
                         child: const Text(
-                          'Statistics and Probability',
+                          '9',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                    ),
+                    TableCell(
+                      child: Container(
+                        padding: const EdgeInsets.all(8.0),
+                        child: const Text(
+                          '19',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                    ),
+                    TableCell(
+                      child: Container(
+                        padding: const EdgeInsets.all(8.0),
+                        child: const Text(
+                          '39',
                           style: TextStyle(
                             color: Colors.white,
                             fontWeight: FontWeight.bold,
@@ -325,6 +457,186 @@ class CourseActivity extends StatelessWidget {
                 ),
                 TableRow(
                   children: [
+                    TableCell(
+                      child: Container(
+                        padding: const EdgeInsets.all(8.0),
+                        child: const Text(
+                          '2',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                    ),
+                    TableCell(
+                      child: Container(
+                        padding: const EdgeInsets.all(8.0),
+                        child: const Text(
+                          'Rizwan',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 16.0, // Increase font size for Subject Name
+                          ),
+                        ),
+                      ),
+                    ),
+                    TableCell(
+                      child: Container(
+                        padding: const EdgeInsets.all(8.0),
+                        child: const Text(
+                          '8',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 16.0, // Increase font size for Subject Name
+                          ),
+                        ),
+                      ),
+                    ),
+                    TableCell(
+                      child: Container(
+                        padding: const EdgeInsets.all(8.0),
+                        child: const Text(
+                          '9',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 16.0, // Increase font size for Subject Name
+                          ),
+                        ),
+                      ),
+                    ),
+                    TableCell(
+                      child: Container(
+                        padding: const EdgeInsets.all(8.0),
+                        child: const Text(
+                          '7',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 16.0, // Increase font size for Subject Name
+                          ),
+                        ),
+                      ),
+                    ),
+                    TableCell(
+                      child: Container(
+                        padding: const EdgeInsets.all(8.0),
+                        child: const Text(
+                          '8',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                    ),
+                    TableCell(
+                      child: Container(
+                        padding: const EdgeInsets.all(8.0),
+                        child: const Text(
+                          '9',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                    ),
+                    TableCell(
+                      child: Container(
+                        padding: const EdgeInsets.all(8.0),
+                        child: const Text(
+                          '19',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                    ),
+                    TableCell(
+                      child: Container(
+                        padding: const EdgeInsets.all(8.0),
+                        child: const Text(
+                          '39',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                TableRow(
+                  children: [
+                    TableCell(
+                      child: Container(
+                        padding: const EdgeInsets.all(8.0),
+                        child: const Text(
+                          '10',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                    ),
+                    TableCell(
+                      child: Container(
+                        padding: const EdgeInsets.all(8.0),
+                        child: const Text(
+                          'Nousher',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 16.0, // Increase font size for Subject Name
+                          ),
+                        ),
+                      ),
+                    ),
+                    TableCell(
+                      child: Container(
+                        padding: const EdgeInsets.all(8.0),
+                        child: const Text(
+                          '6',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 16.0, // Increase font size for Subject Name
+                          ),
+                        ),
+                      ),
+                    ),
+                    TableCell(
+                      child: Container(
+                        padding: const EdgeInsets.all(8.0),
+                        child: const Text(
+                          '7',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 16.0, // Increase font size for Subject Name
+                          ),
+                        ),
+                      ),
+                    ),
+                    TableCell(
+                      child: Container(
+                        padding: const EdgeInsets.all(8.0),
+                        child: const Text(
+                          '8',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 16.0, // Increase font size for Subject Name
+                          ),
+                        ),
+                      ),
+                    ),
                     TableCell(
                       child: Container(
                         padding: const EdgeInsets.all(8.0),
@@ -341,20 +653,7 @@ class CourseActivity extends StatelessWidget {
                       child: Container(
                         padding: const EdgeInsets.all(8.0),
                         child: const Text(
-                          'Data Science Lab',
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontWeight: FontWeight.bold,
-                            fontSize: 16.0, // Increase font size for Subject Name
-                          ),
-                        ),
-                      ),
-                    ),
-                    TableCell(
-                      child: Container(
-                        padding: const EdgeInsets.all(8.0),
-                        child: const Text(
-                          '1',
+                          '8',
                           style: TextStyle(
                             color: Colors.white,
                             fontWeight: FontWeight.bold,
@@ -366,23 +665,7 @@ class CourseActivity extends StatelessWidget {
                       child: Container(
                         padding: const EdgeInsets.all(8.0),
                         child: const Text(
-                          'Statistics and Probability',
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-                TableRow(
-                  children: [
-                    TableCell(
-                      child: Container(
-                        padding: const EdgeInsets.all(8.0),
-                        child: const Text(
-                          '5',
+                          '23',
                           style: TextStyle(
                             color: Colors.white,
                             fontWeight: FontWeight.bold,
@@ -394,32 +677,7 @@ class CourseActivity extends StatelessWidget {
                       child: Container(
                         padding: const EdgeInsets.all(8.0),
                         child: const Text(
-                          'Chinese',
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontWeight: FontWeight.bold,
-                            fontSize: 16.0, // Increase font size for Subject Name
-                          ),
-                        ),
-                      ),
-                    ),
-                    TableCell(
-                      child: Container(
-                        padding: const EdgeInsets.all(8.0),
-                        child: const Text(
-                          '3',
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                      ),
-                    ),
-                    TableCell(
-                      child: Container(
-                        padding: const EdgeInsets.all(8.0),
-                        child: const Text(
-                          '',
+                          '33',
                           style: TextStyle(
                             color: Colors.white,
                             fontWeight: FontWeight.bold,

@@ -89,7 +89,7 @@ class StudentLogin extends StatelessWidget {
                   ElevatedButton(
                     onPressed: () => onPressedButton1(context),
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.blue,
+                      backgroundColor: Color(0xff102448),
                       minimumSize: const Size(200, 45), // Adjust button size here
                     ),
                     child: const Text(
@@ -104,7 +104,7 @@ class StudentLogin extends StatelessWidget {
                   ElevatedButton(
                     onPressed: () => onPressedButton2(context),
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.blue,
+                      backgroundColor: Color(0xff102448),
                       minimumSize: const Size(200, 45), // Adjust button size here
                     ),
                     child: const Text(
@@ -119,7 +119,7 @@ class StudentLogin extends StatelessWidget {
                   ElevatedButton(
                     onPressed: () => onPressedButton3(context),
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.blue,
+                      backgroundColor: Color(0xff102448),
                       minimumSize: const Size(200, 45), // Adjust button size here
                     ),
                     child: const Text(
@@ -134,7 +134,7 @@ class StudentLogin extends StatelessWidget {
                   ElevatedButton(
                     onPressed: () => onPressedButton4(context),
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.blue,
+                      backgroundColor: Color(0xff102448),
                       minimumSize: const Size(200, 45), // Adjust button size here
                     ),
                     child: const Text(
@@ -149,7 +149,7 @@ class StudentLogin extends StatelessWidget {
                   ElevatedButton(
                     onPressed: () => onPressedButton5(context),
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.blue,
+                      backgroundColor: Color(0xff102448),
                       minimumSize: const Size(200, 45), // Adjust button size here
                     ),
                     child: const Text(

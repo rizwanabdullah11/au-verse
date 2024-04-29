@@ -13,20 +13,19 @@ class ProfileActivity extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              const SizedBox(height: 20),
+              SizedBox(height: 20),
               const Text(
                 'AIR University Student Profile',
                 style: TextStyle(fontSize: 35, fontWeight: FontWeight.bold, color: Colors.white),
               ),
-              const SizedBox(height: 10),
               const Text(
                 'Student Name Profile',
                 style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold, color: Colors.white),
               ),
-              const SizedBox(height: 20),
+              const SizedBox(height: 5),
               Container(
                 height: 70,
-                color: Colors.blue.shade800, // Set background color of the Container
+                color: Color(0xff102448), // Set background color of the Container
                 child: const Center(
                   child: Text(
                     'Personal Information',
@@ -38,9 +37,9 @@ class ProfileActivity extends StatelessWidget {
                   ),
                 ),
               ),
-              const SizedBox(height: 5),
+              const SizedBox(height: 2),
               Table(
-                border: TableBorder.all(color: Colors.blue.shade800), // Change border color here
+                border: TableBorder.all(color: Color(0xff102448)), // Change border color here
                 columnWidths: const {
                   0: FlexColumnWidth(2),
                   1: FlexColumnWidth(3),
@@ -59,7 +58,7 @@ class ProfileActivity extends StatelessWidget {
                       TableCell(
                         child: Padding(
                           padding: EdgeInsets.all(8.0),
-                          child: Text('', style: TextStyle(color: Colors.white)), // Empty cell
+                          child: Text('Rizwan Abdullah', style: TextStyle(color: Colors.white)), // Empty cell
                         ),
                       ),
                       TableCell(
@@ -71,7 +70,7 @@ class ProfileActivity extends StatelessWidget {
                       TableCell(
                         child: Padding(
                           padding: EdgeInsets.all(8.0),
-                          child: Text('', style: TextStyle(color: Colors.white)), // Empty cell
+                          child: Text('Muhammad Abdullah', style: TextStyle(color: Colors.white)), // Empty cell
                         ),
                       ),
                     ],
@@ -87,7 +86,7 @@ class ProfileActivity extends StatelessWidget {
                       TableCell(
                         child: Padding(
                           padding: EdgeInsets.all(8.0),
-                          child: Text('', style: TextStyle(color: Colors.white)), // Empty cell
+                          child: Text('15-6-2006', style: TextStyle(color: Colors.white)), // Empty cell
                         ),
                       ),
                       TableCell(
@@ -99,7 +98,7 @@ class ProfileActivity extends StatelessWidget {
                       TableCell(
                         child: Padding(
                           padding: EdgeInsets.all(8.0),
-                          child: Text('', style: TextStyle(color: Colors.white)), // Empty cell
+                          child: Text('Male', style: TextStyle(color: Colors.white)), // Empty cell
                         ),
                       ),
                     ],
@@ -115,7 +114,7 @@ class ProfileActivity extends StatelessWidget {
                       TableCell(
                         child: Padding(
                           padding: EdgeInsets.all(8.0),
-                          child: Text('', style: TextStyle(color: Colors.white)),
+                          child: Text('Single', style: TextStyle(color: Colors.white)),
                         ),
                       ),
                       TableCell(
@@ -127,7 +126,7 @@ class ProfileActivity extends StatelessWidget {
                       TableCell(
                         child: Padding(
                           padding: EdgeInsets.all(8.0),
-                          child: Text('', style: TextStyle(color: Colors.white)),
+                          child: Text('Pakistani', style: TextStyle(color: Colors.white)),
                         ),
                       ),
                     ],
@@ -143,7 +142,7 @@ class ProfileActivity extends StatelessWidget {
                       TableCell(
                         child: Padding(
                           padding: EdgeInsets.all(8.0),
-                          child: Text('', style: TextStyle(color: Colors.white)),
+                          child: Text('Islam', style: TextStyle(color: Colors.white)),
                         ),
                       ),
                       TableCell(
@@ -155,17 +154,17 @@ class ProfileActivity extends StatelessWidget {
                       TableCell(
                         child: Padding(
                           padding: EdgeInsets.all(8.0),
-                          child: Text('', style: TextStyle(color: Colors.white)),
+                          child: Text('00000-00000000-0', style: TextStyle(color: Colors.white)),
                         ),
                       ),
                     ],
                   ),
                 ],
               ),
-              const SizedBox(height: 20),
+              const SizedBox(height: 5),
               Container(
                 height: 70,
-                color: Colors.blue.shade800, // Set background color of the Container
+                color: Color(0xff102448), // Set background color of the Container
                 child: const Center(
                   child: Text(
                     'AIR University Information',
@@ -177,9 +176,9 @@ class ProfileActivity extends StatelessWidget {
                   ),
                 ),
               ),
-              const SizedBox(height: 5),
+              const SizedBox(height: 2),
               Table(
-                border: TableBorder.all(color: Colors.blue.shade800), // Change border color here
+                border: TableBorder.all(color: Color(0xff102448)), // Change border color here
                 columnWidths: const {
                   0: FlexColumnWidth(2),
                   1: FlexColumnWidth(3),
@@ -198,7 +197,7 @@ class ProfileActivity extends StatelessWidget {
                       TableCell(
                         child: Padding(
                           padding: EdgeInsets.all(8.0),
-                          child: Text('', style: TextStyle(color: Colors.white)),
+                          child: Text('Computer Science', style: TextStyle(color: Colors.white)),
                         ),
                       ),
                       TableCell(
@@ -210,17 +209,17 @@ class ProfileActivity extends StatelessWidget {
                       TableCell(
                         child: Padding(
                           padding: EdgeInsets.all(8.0),
-                          child: Text('', style: TextStyle(color: Colors.white)), // Empty cell
+                          child: Text('200890', style: TextStyle(color: Colors.white)), // Empty cell
                         ),
                       ),
                     ],
                   ),
                 ],
               ),
-              const SizedBox(height: 20),
+              const SizedBox(height: 5),
               Container(
                 height: 70,
-                color: Colors.blue.shade800, // Set background color of the Container
+                color: Color(0xff102448), // Set background color of the Container
                 child: const Center(
                   child: Text(
                     'Other Information',
@@ -232,9 +231,9 @@ class ProfileActivity extends StatelessWidget {
                   ),
                 ),
               ),
-              const SizedBox(height: 5),
+              const SizedBox(height: 2),
               Table(
-                border: TableBorder.all(color: Colors.blue.shade800), // Change border color here
+                border: TableBorder.all(color: Color(0xff102448)), // Change border color here
                 columnWidths: const {
                   0: FlexColumnWidth(2),
                   1: FlexColumnWidth(3),
@@ -253,7 +252,7 @@ class ProfileActivity extends StatelessWidget {
                       TableCell(
                         child: Padding(
                           padding: EdgeInsets.all(8.0),
-                          child: Text('', style: TextStyle(color: Colors.white)),
+                          child: Text('Null', style: TextStyle(color: Colors.white)),
                         ),
                       ),
                       TableCell(
@@ -265,7 +264,7 @@ class ProfileActivity extends StatelessWidget {
                       TableCell(
                         child: Padding(
                           padding: EdgeInsets.all(8.0),
-                          child: Text('', style: TextStyle(color: Colors.white)),
+                          child: Text('+92000-0000000', style: TextStyle(color: Colors.white)),
                         ),
                       ),
                     ],
@@ -281,7 +280,7 @@ class ProfileActivity extends StatelessWidget {
                       TableCell(
                         child: Padding(
                           padding: EdgeInsets.all(8.0),
-                          child: Text('', style: TextStyle(color: Colors.white)),
+                          child: Text('rizwan12@gmail.com', style: TextStyle(color: Colors.white)),
                         ),
                       ),
                       TableCell(
@@ -293,7 +292,7 @@ class ProfileActivity extends StatelessWidget {
                       TableCell(
                         child: Padding(
                           padding: EdgeInsets.all(8.0),
-                          child: Text('', style: TextStyle(color: Colors.white)),
+                          child: Text('Street # 10', style: TextStyle(color: Colors.white)),
                         ),
                       ),
                     ],

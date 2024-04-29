@@ -23,7 +23,7 @@ class Attendance_sheetActivity extends StatelessWidget {
                     // Subject and Section information box
                     Container(
                       padding: const EdgeInsets.all(10.0),
-                      color: Colors.blue,
+                      color: Color(0xff102448),
                       width: 1020,
                       child: const Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -51,7 +51,7 @@ class Attendance_sheetActivity extends StatelessWidget {
                     // Table
                     Table(
                       border: TableBorder.all(
-                        color: Colors.blue, // Table border color blue
+                        color: Color(0xff102448), // Table border color blue
                       ),
                       columnWidths: const {
                         0: FlexColumnWidth(1), // ID column

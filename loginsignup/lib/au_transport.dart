@@ -1,25 +1,29 @@
 import 'package:flutter/material.dart';
+import 'au_buses_employee.dart';
+import 'au_buses_schedule.dart';
+import 'au_buses_student.dart';
+
 
 class FifthActivity extends StatelessWidget {
   const FifthActivity({Key? key}) : super(key: key);
 
-  void onPressedButton1(BuildContext context) {
-    // Implement button 1 action here
-  }
 
-  void onPressedButton2(BuildContext context) {
-    // Implement button 2 action here
-    // Navigate to FourthActivity when "Events/ Notification" button is pressed
+  void onPressedButton1(BuildContext context) {
     Navigator.push(
       context,
-      MaterialPageRoute(builder: (context) => const FifthActivity()),
+      MaterialPageRoute(builder: (context) => Employee_buses()),
     );
   }
-
+  void onPressedButton2(BuildContext context) {
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => Schedule_buses()),
+    );
+  }
   void onPressedButton3(BuildContext context) {
     Navigator.push(
       context,
-      MaterialPageRoute(builder: (context) => const FifthActivity()),
+      MaterialPageRoute(builder: (context) => Student_buses()),
     );
   }
 
@@ -69,7 +73,7 @@ class FifthActivity extends StatelessWidget {
                   ElevatedButton(
                     onPressed: () => onPressedButton1(context),
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.blue,
+                      backgroundColor: Color(0xff102448),
                       minimumSize: const Size(200, 45), // Adjust button size here
                     ),
                     child: const Text(
@@ -84,7 +88,7 @@ class FifthActivity extends StatelessWidget {
                   ElevatedButton(
                     onPressed: () => onPressedButton2(context),
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.blue,
+                      backgroundColor: Color(0xff102448),
                       minimumSize: const Size(200, 45), // Adjust button size here
                     ),
                     child: const Text(
@@ -99,7 +103,7 @@ class FifthActivity extends StatelessWidget {
                   ElevatedButton(
                     onPressed: () => onPressedButton3(context),
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.blue,
+                      backgroundColor: Color(0xff102448),
                       minimumSize: const Size(200, 45), // Adjust button size here
                     ),
                     child: const Text(

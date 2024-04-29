@@ -26,7 +26,7 @@ class FProfileActivity extends StatelessWidget {
               const SizedBox(height: 20),
               Container(
                 height: 100,
-                color: Colors.blue.shade800, // Set background color of the Container
+                color: Color(0xff102448), // Set background color of the Container
                 child: const Center(
                   child: Text(
                     'Personal Information',
@@ -40,7 +40,7 @@ class FProfileActivity extends StatelessWidget {
               ),
               const SizedBox(height: 10),
               Table(
-                border: TableBorder.all(color: Colors.blue.shade800), // Change border color here
+                border: TableBorder.all(color: Color(0xff102448)), // Change border color here
                 columnWidths: const {
                   0: FlexColumnWidth(2),
                   1: FlexColumnWidth(3),
@@ -59,7 +59,7 @@ class FProfileActivity extends StatelessWidget {
                       TableCell(
                         child: Padding(
                           padding: EdgeInsets.all(8.0),
-                          child: Text('', style: TextStyle(color: Colors.white)), // Empty cell
+                          child: Text('Maam Romana Maroof', style: TextStyle(color: Colors.white)), // Empty cell
                         ),
                       ),
                       TableCell(
@@ -71,7 +71,7 @@ class FProfileActivity extends StatelessWidget {
                       TableCell(
                         child: Padding(
                           padding: EdgeInsets.all(8.0),
-                          child: Text('', style: TextStyle(color: Colors.white)), // Empty cell
+                          child: Text('Mr. Maroof', style: TextStyle(color: Colors.white)), // Empty cell
                         ),
                       ),
                     ],
@@ -87,7 +87,7 @@ class FProfileActivity extends StatelessWidget {
                       TableCell(
                         child: Padding(
                           padding: EdgeInsets.all(8.0),
-                          child: Text('', style: TextStyle(color: Colors.white)), // Empty cell
+                          child: Text('10-10-1990', style: TextStyle(color: Colors.white)), // Empty cell
                         ),
                       ),
                       TableCell(
@@ -99,7 +99,7 @@ class FProfileActivity extends StatelessWidget {
                       TableCell(
                         child: Padding(
                           padding: EdgeInsets.all(8.0),
-                          child: Text('', style: TextStyle(color: Colors.white)), // Empty cell
+                          child: Text('Female', style: TextStyle(color: Colors.white)), // Empty cell
                         ),
                       ),
                     ],
@@ -115,7 +115,7 @@ class FProfileActivity extends StatelessWidget {
                       TableCell(
                         child: Padding(
                           padding: EdgeInsets.all(8.0),
-                          child: Text('', style: TextStyle(color: Colors.white)),
+                          child: Text('Single', style: TextStyle(color: Colors.white)),
                         ),
                       ),
                       TableCell(
@@ -127,7 +127,7 @@ class FProfileActivity extends StatelessWidget {
                       TableCell(
                         child: Padding(
                           padding: EdgeInsets.all(8.0),
-                          child: Text('', style: TextStyle(color: Colors.white)),
+                          child: Text('Pakistani', style: TextStyle(color: Colors.white)),
                         ),
                       ),
                     ],
@@ -143,7 +143,7 @@ class FProfileActivity extends StatelessWidget {
                       TableCell(
                         child: Padding(
                           padding: EdgeInsets.all(8.0),
-                          child: Text('', style: TextStyle(color: Colors.white)),
+                          child: Text('Islam', style: TextStyle(color: Colors.white)),
                         ),
                       ),
                       TableCell(
@@ -155,7 +155,7 @@ class FProfileActivity extends StatelessWidget {
                       TableCell(
                         child: Padding(
                           padding: EdgeInsets.all(8.0),
-                          child: Text('', style: TextStyle(color: Colors.white)),
+                          child: Text('00000-00000000-0', style: TextStyle(color: Colors.white)),
                         ),
                       ),
                     ],
@@ -165,7 +165,7 @@ class FProfileActivity extends StatelessWidget {
               const SizedBox(height: 20),
               Container(
                 height: 100,
-                color: Colors.blue.shade800, // Set background color of the Container
+                color: Color(0xff102448), // Set background color of the Container
                 child: const Center(
                   child: Text(
                     'AIR University Information',
@@ -179,7 +179,7 @@ class FProfileActivity extends StatelessWidget {
               ),
               const SizedBox(height: 10),
               Table(
-                border: TableBorder.all(color: Colors.blue.shade800), // Change border color here
+                border: TableBorder.all(color: Color(0xff102448)), // Change border color here
                 columnWidths: const {
                   0: FlexColumnWidth(2),
                   1: FlexColumnWidth(3),
@@ -198,7 +198,7 @@ class FProfileActivity extends StatelessWidget {
                       TableCell(
                         child: Padding(
                           padding: EdgeInsets.all(8.0),
-                          child: Text('', style: TextStyle(color: Colors.white)),
+                          child: Text('Computer Science', style: TextStyle(color: Colors.white)),
                         ),
                       ),
                       TableCell(
@@ -210,7 +210,7 @@ class FProfileActivity extends StatelessWidget {
                       TableCell(
                         child: Padding(
                           padding: EdgeInsets.all(8.0),
-                          child: Text('', style: TextStyle(color: Colors.white)), // Empty cell
+                          child: Text('000000', style: TextStyle(color: Colors.white)), // Empty cell
                         ),
                       ),
                     ],

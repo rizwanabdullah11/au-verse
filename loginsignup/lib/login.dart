@@ -2,11 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:loginsignup/signup.dart';
-import 'au_login.dart'; // Assuming this is where your Home widget is defined
+import 'au_login.dart';
 
 class LoginPage extends StatelessWidget {
   final FirebaseAuth _auth = FirebaseAuth.instance;
-  final GoogleSignIn googleSignIn = GoogleSignIn();
+
+  final GoogleSignIn googleSignIn = GoogleSignIn
+    (
+    clientId: '865009703378-hnaijjmim56kssaerfkarst2p65g4oa8.apps.googleusercontent.com',
+  );
 
   LoginPage({Key? key}) : super(key: key);
 
@@ -16,7 +20,7 @@ class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromRGBO(125, 3, 255, 0.4),
+      backgroundColor: Color(0xff102448),
       body: Center(
         child: Padding(
           padding: const EdgeInsets.all(15.0),
@@ -91,9 +95,10 @@ class LoginPage extends StatelessWidget {
                     _loginWithEmailAndPassword(context, email, password);
                   },
                   style: ElevatedButton.styleFrom(
-                    foregroundColor: Colors.blue,
+                    foregroundColor: Color(0xff052b6b),
                     backgroundColor: Colors.white,
-                    padding: const EdgeInsets.symmetric(vertical: 10.0, horizontal: 30.0),
+                    padding: const EdgeInsets.symmetric(
+                        vertical: 10.0, horizontal: 30.0),
                   ),
                   child: const Text(
                     'LOGIN',
@@ -126,14 +131,16 @@ class LoginPage extends StatelessWidget {
                         // Navigate to the home page upon successful login
                         Navigator.pushReplacement(
                           context,
-                          MaterialPageRoute(builder: (context) => const Home()), // Replace Home() with your home page
+                          MaterialPageRoute(builder: (
+                              context) => const Home()), // Replace Home() with your home page
                         );
                       }
                     });
                   },
                   child: Container(
                     padding: const EdgeInsets.symmetric(horizontal: 8.0),
-                    margin: const EdgeInsets.symmetric(horizontal: 30.0, vertical: 20.0),
+                    margin: const EdgeInsets.symmetric(
+                        horizontal: 30.0, vertical: 20.0),
                     decoration: BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(8.0),
@@ -142,7 +149,8 @@ class LoginPage extends StatelessWidget {
                           color: Colors.grey.withOpacity(0.5),
                           spreadRadius: 2,
                           blurRadius: 5,
-                          offset: const Offset(0, 3), // changes position of shadow
+                          offset: const Offset(0,
+                              3), // changes position of shadow
                         ),
                       ],
                     ),
@@ -150,15 +158,17 @@ class LoginPage extends StatelessWidget {
                       children: [
                         Padding(
                           padding: const EdgeInsets.all(8.0),
-                          child: Image.asset('assets/google.png', width: 24.0, height: 24.0),
+                          child: Image.asset('assets/google.png', width: 24.0,
+                              height: 24.0),
                         ),
-                        SizedBox(width: 8.0), // Adjust the space between the logo and the text
+                        SizedBox(width: 8.0),
+                        // Adjust the space between the logo and the text
                         const Text(
                           'Login with Google',
                           textAlign: TextAlign.center,
                           style: TextStyle(
                             fontSize: 20.0,
-                            color: Colors.blue,
+                            color: Color(0xff052b6b),
                           ),
                         ),
                       ],
@@ -173,7 +183,8 @@ class LoginPage extends StatelessWidget {
     );
   }
 
-  Future<void> _loginWithEmailAndPassword(BuildContext context, String email, String password) async {
+  Future<void> _loginWithEmailAndPassword(BuildContext context, String email,
+      String password) async {
     try {
       // Sign in with email and password using Firebase Authentication
       await FirebaseAuth.instance.signInWithEmailAndPassword(
@@ -184,33 +195,31 @@ class LoginPage extends StatelessWidget {
       // Navigate to the home page upon successful login
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (context) => const Home()), // Replace HomePage with your home page
+        MaterialPageRoute(builder: (
+            context) => const Home()), // Replace HomePage with your home page
       );
     } catch (e) {
       // Handle login errors
       print('Error signing in: $e');
       // Show error message to the user
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('Failed to sign in. Please check your credentials.')),
+        const SnackBar(
+            content: Text('Failed to sign in. Please check your credentials.')),
       );
     }
   }
 
   Future<User?> signInWithGoogle() async {
     try {
-      // Trigger the Google Sign In flow
       final GoogleSignInAccount? googleSignInAccount = await googleSignIn.signIn();
       if (googleSignInAccount != null) {
-        // Obtain the GoogleSignInAuthentication object
         final GoogleSignInAuthentication googleSignInAuthentication = await googleSignInAccount.authentication;
 
-        // Create a new credential
         final AuthCredential credential = GoogleAuthProvider.credential(
           accessToken: googleSignInAuthentication.accessToken,
           idToken: googleSignInAuthentication.idToken,
         );
 
-        // Sign in to Firebase with the Google credentials
         final UserCredential authResult = await _auth.signInWithCredential(credential);
         return authResult.user;
       }
@@ -221,4 +230,3 @@ class LoginPage extends StatelessWidget {
     }
   }
 }
-

@@ -15,7 +15,7 @@ class GradeActivity extends StatelessWidget {
             const SizedBox(height: 20.0),
             Container(
               padding: const EdgeInsets.all(8.0),
-              color: Colors.blue.shade800,
+              color: Color(0xff102448),
               height: 70,
               child: const Center(
                 child: Text(
@@ -44,7 +44,7 @@ class GradeActivity extends StatelessWidget {
                   child: TextField(
                     style: TextStyle(color: Colors.white), // Added text color
                     decoration: InputDecoration(
-                      hintText: '',
+                      hintText: '200890',
                       hintStyle: TextStyle(color: Colors.white70), // Added hint text color
                       border: InputBorder.none, // Removed the underline border
                     ),
@@ -66,7 +66,7 @@ class GradeActivity extends StatelessWidget {
                   child: TextField(
                     style: TextStyle(color: Colors.white), // Added text color
                     decoration: InputDecoration(
-                      hintText: '',
+                      hintText: 'Rizwan Abdullah',
                       hintStyle: TextStyle(color: Colors.white70), // Added hint text color
                       border: InputBorder.none, // Removed the underline border
                     ),
@@ -89,7 +89,7 @@ class GradeActivity extends StatelessWidget {
                   child: TextField(
                     style: TextStyle(color: Colors.white), // Added text color
                     decoration: InputDecoration(
-                      hintText: '',
+                      hintText: '3',
                       hintStyle: TextStyle(color: Colors.white70), // Added hint text color
                       border: InputBorder.none, // Removed the underline border
                     ),
@@ -101,7 +101,7 @@ class GradeActivity extends StatelessWidget {
             const SizedBox(height: 20.0),
             // Table
             Table(
-              border: TableBorder.all(color: Colors.blue.shade800), // Change border color
+              border: TableBorder.all(color: Color(0xff102448)), // Change border color
               columnWidths: const {
                 0: FlexColumnWidth(1),
                 1: FlexColumnWidth(3), // Increase size for Course
@@ -177,9 +177,336 @@ class GradeActivity extends StatelessWidget {
                     ),
                   ],
                 ),
-                // Remaining Rows
-                for (var i = 1; i <= 8; i++)
-                  buildTableRow(i),
+                TableRow(
+                  children: [
+                    TableCell(
+                      child: Container(
+                        padding: const EdgeInsets.all(8.0),
+                        child: const Text(
+                          '1',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                    ),
+                    TableCell(
+                      child: Container(
+                        padding: const EdgeInsets.all(8.0),
+                        child: const Text(
+                          'Data Science', // Increase size for Course
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 18.0, // Adjust font size
+                          ),
+                        ),
+                      ),
+                    ),
+                    TableCell(
+                      child: Container(
+                        padding: const EdgeInsets.all(8.0),
+                        child: const Text(
+                          '3',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                    ),
+                    TableCell(
+                      child: Container(
+                        padding: const EdgeInsets.all(8.0),
+                        child: const Text(
+                          'B', // Decrease size for Grade
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 16.0, // Adjust font size
+                          ),
+                        ),
+                      ),
+                    ),
+                    TableCell(
+                      child: Container(
+                        padding: const EdgeInsets.all(8.0),
+                        child: const Text(
+                          '3',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                TableRow(
+                  children: [
+                    TableCell(
+                      child: Container(
+                        padding: const EdgeInsets.all(8.0),
+                        child: const Text(
+                          '2',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                    ),
+                    TableCell(
+                      child: Container(
+                        padding: const EdgeInsets.all(8.0),
+                        child: const Text(
+                          'Data Science Lab', // Increase size for Course
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 18.0, // Adjust font size
+                          ),
+                        ),
+                      ),
+                    ),
+                    TableCell(
+                      child: Container(
+                        padding: const EdgeInsets.all(8.0),
+                        child: const Text(
+                          '1',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                    ),
+                    TableCell(
+                      child: Container(
+                        padding: const EdgeInsets.all(8.0),
+                        child: const Text(
+                          'B+', // Decrease size for Grade
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 16.0, // Adjust font size
+                          ),
+                        ),
+                      ),
+                    ),
+                    TableCell(
+                      child: Container(
+                        padding: const EdgeInsets.all(8.0),
+                        child: const Text(
+                          '3.33',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                TableRow(
+                  children: [
+                    TableCell(
+                      child: Container(
+                        padding: const EdgeInsets.all(8.0),
+                        child: const Text(
+                          '3',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                    ),
+                    TableCell(
+                      child: Container(
+                        padding: const EdgeInsets.all(8.0),
+                        child: const Text(
+                          'Compiler Construction', // Increase size for Course
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 18.0, // Adjust font size
+                          ),
+                        ),
+                      ),
+                    ),
+                    TableCell(
+                      child: Container(
+                        padding: const EdgeInsets.all(8.0),
+                        child: const Text(
+                          '2',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                    ),
+                    TableCell(
+                      child: Container(
+                        padding: const EdgeInsets.all(8.0),
+                        child: const Text(
+                          'B', // Decrease size for Grade
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 16.0, // Adjust font size
+                          ),
+                        ),
+                      ),
+                    ),
+                    TableCell(
+                      child: Container(
+                        padding: const EdgeInsets.all(8.0),
+                        child: const Text(
+                          '3',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                TableRow(
+                  children: [
+                    TableCell(
+                      child: Container(
+                        padding: const EdgeInsets.all(8.0),
+                        child: const Text(
+                          '4',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                    ),
+                    TableCell(
+                      child: Container(
+                        padding: const EdgeInsets.all(8.0),
+                        child: const Text(
+                          'Compiler Lab', // Increase size for Course
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 18.0, // Adjust font size
+                          ),
+                        ),
+                      ),
+                    ),
+                    TableCell(
+                      child: Container(
+                        padding: const EdgeInsets.all(8.0),
+                        child: const Text(
+                          '1',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                    ),
+                    TableCell(
+                      child: Container(
+                        padding: const EdgeInsets.all(8.0),
+                        child: const Text(
+                          'B', // Decrease size for Grade
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 16.0, // Adjust font size
+                          ),
+                        ),
+                      ),
+                    ),
+                    TableCell(
+                      child: Container(
+                        padding: const EdgeInsets.all(8.0),
+                        child: const Text(
+                          '3',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                TableRow(
+                  children: [
+                    TableCell(
+                      child: Container(
+                        padding: const EdgeInsets.all(8.0),
+                        child: const Text(
+                          '5',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                    ),
+                    TableCell(
+                      child: Container(
+                        padding: const EdgeInsets.all(8.0),
+                        child: const Text(
+                          'Chinese', // Increase size for Course
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 18.0, // Adjust font size
+                          ),
+                        ),
+                      ),
+                    ),
+                    TableCell(
+                      child: Container(
+                        padding: const EdgeInsets.all(8.0),
+                        child: const Text(
+                          '3',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                    ),
+                    TableCell(
+                      child: Container(
+                        padding: const EdgeInsets.all(8.0),
+                        child: const Text(
+                          'A-', // Decrease size for Grade
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 16.0, // Adjust font size
+                          ),
+                        ),
+                      ),
+                    ),
+                    TableCell(
+                      child: Container(
+                        padding: const EdgeInsets.all(8.0),
+                        child: const Text(
+                          '3.67',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
               ],
             ),
           ],
@@ -196,7 +523,7 @@ class GradeActivity extends StatelessWidget {
           child: Container(
             height: 40.0,
             decoration: BoxDecoration(
-              border: Border.all(color: Colors.blue.shade800),
+              border: Border.all(color: Color(0xff102448)),
             ),
             alignment: Alignment.center,
             child: Text(
@@ -211,7 +538,7 @@ class GradeActivity extends StatelessWidget {
           child: Container(
             height: 40.0,
             decoration: BoxDecoration(
-              border: Border.all(color: Colors.blue.shade800),
+              border: Border.all(color: Color(0xff102448)),
             ),
           ),
         ),
@@ -219,7 +546,7 @@ class GradeActivity extends StatelessWidget {
           child: Container(
             height: 40.0,
             decoration: BoxDecoration(
-              border: Border.all(color: Colors.blue.shade800),
+              border: Border.all(color: Color(0xff102448)),
             ),
           ),
         ),
@@ -227,7 +554,7 @@ class GradeActivity extends StatelessWidget {
           child: Container(
             height: 40.0,
             decoration: BoxDecoration(
-              border: Border.all(color: Colors.blue.shade800),
+              border: Border.all(color: Color(0xff102448)),
             ),
           ),
         ),
@@ -235,7 +562,7 @@ class GradeActivity extends StatelessWidget {
           child: Container(
             height: 40.0,
             decoration: BoxDecoration(
-              border: Border.all(color: Colors.blue.shade800),
+              border: Border.all(color: Color(0xff102448)),
             ),
           ),
         ),

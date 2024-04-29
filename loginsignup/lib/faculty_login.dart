@@ -10,28 +10,28 @@ class FacultyLogin extends StatelessWidget {
   void onPressedButton1(BuildContext context) {
     Navigator.push(
       context,
-      MaterialPageRoute(builder: (context) => const FProfileActivity()),
+      MaterialPageRoute(builder: (context) => FProfileActivity()),
     );
   }
 
   void onPressedButton2(BuildContext context) {
     Navigator.push(
       context,
-      MaterialPageRoute(builder: (context) => const TimetableActivity()),
+      MaterialPageRoute(builder: (context) => TimetableActivity()),
     );
   }
 
   void onPressedButton3(BuildContext context) {
     Navigator.push(
       context,
-      MaterialPageRoute(builder: (context) => const Attendance_sheetActivity()),
+      MaterialPageRoute(builder: (context) =>Attendance_sheetActivity()),
     );
   }
 
   void onPressedButton4(BuildContext context) {
     Navigator.push(
       context,
-      MaterialPageRoute(builder: (context) => const Marks_uploadActivity()),
+      MaterialPageRoute(builder: (context) => Marks_uploadActivity()),
     );
   }
 
@@ -78,7 +78,7 @@ class FacultyLogin extends StatelessWidget {
                   ElevatedButton(
                     onPressed: () => onPressedButton1(context),
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.blue,
+                      backgroundColor: Color(0xff102448),
                       minimumSize: const Size(200, 45),
                     ),
                     child: const Text(
@@ -93,7 +93,7 @@ class FacultyLogin extends StatelessWidget {
                   ElevatedButton(
                     onPressed: () => onPressedButton2(context),
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.blue,
+                      backgroundColor: Color(0xff102448),
                       minimumSize: const Size(200, 45),
                     ),
                     child: const Text(
@@ -108,7 +108,7 @@ class FacultyLogin extends StatelessWidget {
                   ElevatedButton(
                     onPressed: () => onPressedButton3(context),
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.blue,
+                      backgroundColor: Color(0xff102448),
                       minimumSize: const Size(200, 45),
                     ),
                     child: const Text(
@@ -123,7 +123,7 @@ class FacultyLogin extends StatelessWidget {
                   ElevatedButton(
                     onPressed: () => onPressedButton4(context),
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.blue,
+                      backgroundColor: Color(0xff102448),
                       minimumSize: const Size(200, 45),
                     ),
                     child: const Text(

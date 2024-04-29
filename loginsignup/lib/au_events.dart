@@ -92,7 +92,7 @@ class _EventsScreenState extends State<EventsScreen> {
                 itemBuilder: (context, index) {
                   return Card(
                     margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 4), // Adjust margin for spacing
-                    color: Colors.blue.shade800,
+                    color: Color(0xff102448),
                     child: ListTile(
                       title: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,

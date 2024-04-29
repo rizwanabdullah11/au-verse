@@ -1,33 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:video_player/video_player.dart';
-import 'package:loginsignup/au_home.dart';
-import 'faculty_login.dart';
 import 'student_login.dart';
+import 'faculty_login.dart';
+import 'au_home.dart';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
-
-  void onPressedButton1(BuildContext context) {
-    Navigator.push(
-      context,
-      MaterialPageRoute(builder: (context) => const StudentLogin()),
-    );
-  }
-
-  void onPressedButton2(BuildContext context) {
-    Navigator.push(
-      context,
-      MaterialPageRoute(builder: (context) => const FacultyLogin()),
-    );
-  }
-
-  void onPressedButton3(BuildContext context) {
-    Navigator.push(
-      context,
-      MaterialPageRoute(builder: (context) => const ThirdActivity()),
-    );
-  }
-
   @override
   _HomeState createState() => _HomeState();
 }
@@ -38,20 +16,29 @@ class _HomeState extends State<Home> {
   @override
   void initState() {
     super.initState();
+    initializeVideo();
+  }
+
+  Future<void> initializeVideo() async {
     _controller = VideoPlayerController.asset(
       'assets/auvideo.mp4',
-    )..initialize().then((_) {
+    );
+    try {
+      await _controller.initialize();
       setState(() {});
-    });
-    _controller.setLooping(true);
-    _controller.play();
+      _controller.setLooping(true);
+      _controller.play();
+    } catch (e) {
+      print("Error initializing video: $e");
+    }
   }
 
   @override
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        SizedBox.expand(
+        _controller.value.isInitialized
+            ? SizedBox.expand(
           child: FittedBox(
             fit: BoxFit.cover,
             child: SizedBox(
@@ -60,22 +47,23 @@ class _HomeState extends State<Home> {
               child: VideoPlayer(_controller),
             ),
           ),
-        ),
+        )
+            : Container(), // Placeholder for video if not initialized
         Scaffold(
-          backgroundColor: Colors.transparent, // Make the scaffold background transparent
+          backgroundColor: Colors.transparent,
           body: Center(
             child: Container(
               width: 370.0,
               height: 400.0,
               decoration: BoxDecoration(
-                color: Colors.black.withOpacity(0.8), // Add opacity to the container background color
-                borderRadius: BorderRadius.circular(20.0), // Add border radius for rounded corners
+                color: Colors.black.withOpacity(0.8),
+                borderRadius: BorderRadius.circular(20.0),
                 boxShadow: [
                   BoxShadow(
-                    color: Colors.black.withOpacity(0.3), // Add shadow color
+                    color: Colors.black.withOpacity(0.3),
                     spreadRadius: 3,
                     blurRadius: 7,
-                    offset: const Offset(0, 3), // changes position of shadow
+                    offset: const Offset(0, 3),
                   ),
                 ],
               ),
@@ -93,10 +81,15 @@ class _HomeState extends State<Home> {
                   ),
                   const SizedBox(height: 30.0),
                   ElevatedButton(
-                    onPressed: () {}, // Handle button press
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => StudentLogin()),
+                      );
+                    },
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.blue,
-                      minimumSize: const Size(200, 45), // Adjust button size here
+                      backgroundColor: Color(0xff102448),
+                      minimumSize: const Size(200, 45),
                     ),
                     child: const Text(
                       'Login as Student',
@@ -108,10 +101,15 @@ class _HomeState extends State<Home> {
                   ),
                   const SizedBox(height: 20.0),
                   ElevatedButton(
-                    onPressed: () {}, // Handle button press
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => FacultyLogin()),
+                      );
+                    },
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.blue,
-                      minimumSize: const Size(200, 45), // Adjust button size here
+                      backgroundColor: Color(0xff102448),
+                      minimumSize: const Size(200, 45),
                     ),
                     child: const Text(
                       'Login as Faculty',
@@ -123,10 +121,15 @@ class _HomeState extends State<Home> {
                   ),
                   const SizedBox(height: 25.0),
                   ElevatedButton(
-                    onPressed: () {}, // Handle button press
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => ThirdActivity()),
+                      );
+                    },
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.blue,
-                      minimumSize: const Size(200, 45), // Adjust button size here
+                      backgroundColor: Color(0xff102448),
+                      minimumSize: const Size(200, 45),
                     ),
                     child: const Text(
                       'Home',

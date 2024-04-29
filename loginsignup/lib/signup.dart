@@ -18,7 +18,7 @@ class _SignupPageState extends State<Signup> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromRGBO(125, 3, 255, 0.4),
+      backgroundColor: Color(0xff102448),
       body: Center(
         child: Container(
           width: 370.0,
@@ -131,7 +131,7 @@ class _SignupPageState extends State<Signup> {
                   _signupWithEmailAndPassword(context, _usernameController.text, _emailController.text, _passwordController.text);
                 },
                 style: ElevatedButton.styleFrom(
-                  foregroundColor: Colors.blue, backgroundColor: Colors.white,
+                  foregroundColor: Color(0xff102448), backgroundColor: Colors.white,
                   padding: const EdgeInsets.symmetric(vertical: 16.0, horizontal: 32.0), // adjust padding
                 ),
                 child: const Text('SIGNUP'),

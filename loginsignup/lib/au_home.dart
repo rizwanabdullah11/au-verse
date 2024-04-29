@@ -86,7 +86,7 @@ class ThirdActivity extends StatelessWidget {
                   ElevatedButton(
                     onPressed: () => onPressedButton1(context),
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.blue, // Change text color
+                      backgroundColor: Color(0xff102448), // Change text color
                       elevation: 5, // Increase button elevation
                       minimumSize: const Size(200, 45), // Adjust button size here
                     ),
@@ -102,7 +102,7 @@ class ThirdActivity extends StatelessWidget {
                   ElevatedButton(
                     onPressed: () => onPressedButton2(context),
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.blue, // Change text color
+                      backgroundColor: Color(0xff102448), // Change text color
                       elevation: 5, // Increase button elevation
                       minimumSize: const Size(200, 45), // Adjust button size here
                     ),
@@ -119,7 +119,7 @@ class ThirdActivity extends StatelessWidget {
                     onPressed: () => onPressedButton3(context),
                     style: ElevatedButton.styleFrom(
 
-                      backgroundColor: Colors.blue, // Change text color
+                      backgroundColor: Color(0xff102448), // Change text color
                       elevation: 5, // Increase button elevation
                       minimumSize: const Size(200, 45), // Adjust button size here
                     ),
@@ -135,7 +135,7 @@ class ThirdActivity extends StatelessWidget {
                   ElevatedButton(
                     onPressed: () => onPressedButton4(context),
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.blue, // Change text color
+                      backgroundColor: Color(0xff102448), // Change text color
                       elevation: 5, // Increase button elevation
                       minimumSize: const Size(200, 45), // Adjust button size here
                     ),
@@ -151,7 +151,7 @@ class ThirdActivity extends StatelessWidget {
                   ElevatedButton(
                     onPressed: () => onPressedButton5(context),
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.blue, // Change button color// Change text color
+                      backgroundColor: Color(0xff102448), // Change button color// Change text color
                       elevation: 5, // Increase button elevation
                       minimumSize: const Size(200, 45), // Adjust button size here
                     ),
